@@ -1,5 +1,8 @@
 # IMDB
-Interactive plots of IMDB ratings data with R
+Interactive plots of IMDB ratings data with R 
+(the plot below is jsut a static screenshot of the interactive plot, which is available here.)
+
+![alt text](https://github.com/demetriodor/IMDB/raw/master/output/imdb-ratings-per-period.jpg)
 
 # Data
 If you have a list on your IMDB profile with your movie ratings, you can directly export the list as a `csv` file.
@@ -85,7 +88,7 @@ clickme(points,
         names = d$title,
         color_groups = d$period,
         color_title = "Time period",
-        file = "F:/imdb_dots_2019.html")
+        file = "imdb_dots_2019.html")
 ```
 The code above works and produces an interactive plot in the browser. 
 But the `height`, `weight`, `jitter`, and `file` parameters are specified yet do not affect the output. 
@@ -93,10 +96,29 @@ Maybe the syntax has changed, but I cannot find the documentation.
 In any case, we can adjust these parameters directly in the output html file by editing the file in any text processor. 
 The output html file is in a folder called 'output' within the folder of the 'clickme' package in the folder of your `R` installation.
 
-The resulting html with the plot is here. The interactive plot itself is here. And below is a picture of the plot.
+The resulting html with the plot is here. The interactive plot itself is here. 
+We can also group the moview per genre. The complication is that most movies have more than one genre, and we only group by the first genre in the list.
 
-# The End (for now)
+```
+clickme(points,
+        x = d$imdb.j, y = d$mine.j, 
+        title = "Scatterplot of general and personal movie ratings", 
+        subtitle = "(Hover over a dot to reveal the title. Click on the menu to the right to select.)",
+        formats = list(x = ".1f", y = ".0f"),
+        opacity = .8, jitter = 0.2, radius = 5,
+        height = 600, width = 900,
+        x_title = "Internet Movie Database (IMDb) rating", 
+        y_title = "My rating",
+        names = d$title,
+        color_groups = d$Genre.1,
+        color_title = "Time period",
+        file = "imdb_dots_2019_2.html")
+```
+![alt text](https://github.com/demetriodor/IMDB/raw/master/output/imdb-ratings-per-genre.jpg)
 
+
+# The End
+For now.
 
 
 
