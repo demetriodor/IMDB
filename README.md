@@ -1,5 +1,5 @@
-# IMDB
-Interactive plots of IMDB ratings data with R 
+# IMDB Ratings
+Interactive plots of IMDB ratings data with `R` 
 (the plot below is jsut a static screenshot of one of the interactive plots, which is available [here](http://dimiter.eu/Visualizations_files/imdb2019/IMDB_ratings_period.html).)
 
 ![alt text](https://github.com/demetriodor/IMDB/raw/master/output/imdb-ratings-per-period.jpg)
