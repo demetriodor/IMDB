@@ -1,6 +1,6 @@
 # IMDB
 Interactive plots of IMDB ratings data with R 
-(the plot below is jsut a static screenshot of the interactive plot, which is available here.)
+(the plot below is jsut a static screenshot of one of the interactive plots, which is available [here](http://dimiter.eu/Visualizations_files/imdb2019/IMDB_ratings_period.html).)
 
 ![alt text](https://github.com/demetriodor/IMDB/raw/master/output/imdb-ratings-per-period.jpg)
 
@@ -96,8 +96,9 @@ Maybe the syntax has changed, but I cannot find the documentation.
 In any case, we can adjust these parameters directly in the output html file by editing the file in any text processor. 
 The output html file is in a folder called 'output' within the folder of the 'clickme' package in the folder of your `R` installation.
 
-The resulting html with the plot is here. The interactive plot itself is here. 
-We can also group the moview per genre. The complication is that most movies have more than one genre, and we only group by the first genre in the list.
+The resulting html with the plot is [here](https://raw.githubusercontent.com/demetriodor/IMDB/master/output/IMDB_ratings_period.html). The interactive plot itself is [here](http://dimiter.eu/Visualizations_files/imdb2019/IMDB_ratings_period.html). 
+
+We can also group the moview per genre. The complication is that most movies have more than one genre, and we only group by the first genre in the list. The result is [here](http://dimiter.eu/Visualizations_files/imdb2019/IMDB_ratings_genre.html)
 
 ```
 clickme(points,
