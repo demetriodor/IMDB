@@ -88,14 +88,14 @@ clickme(points,
         file = "F:/imdb_dots_2019.html")
 ```
 The code above works and produces an interactive plot in the browser. 
-But the `height`, 'weight', `jitter`, and `file` parameters are specified yet do not affect the output. 
+But the `height`, `weight`, `jitter`, and `file` parameters are specified yet do not affect the output. 
 Maybe the syntax has changed, but I cannot find the documentation. 
 In any case, we can adjust these parameters directly in the output html file by editing the file in any text processor. 
 The output html file is in a folder called 'output' within the folder of the 'clickme' package in the folder of your `R` installation.
 
 The resulting html with the plot is here. The interactive plot itself is here. And below is a picture of the plot.
 
-#The End (for now)
+# The End (for now)
 
 
 
