@@ -98,7 +98,7 @@ The output html file is in a folder called 'output' within the folder of the 'cl
 
 The resulting html with the plot is [here](https://raw.githubusercontent.com/demetriodor/IMDB/master/output/IMDB_ratings_period.html). The interactive plot itself is [here](http://dimiter.eu/Visualizations_files/imdb2019/IMDB_ratings_period.html). 
 
-We can also group the moview per genre. The complication is that most movies have more than one genre, and we only group by the first genre in the list. The result is [here](http://dimiter.eu/Visualizations_files/imdb2019/IMDB_ratings_genre.html)
+We can also group the moview per genre. The complication is that most movies have more than one genre, and we only group by the first genre in the list. The result is [here](http://dimiter.eu/Visualizations_files/imdb2019/IMDB_ratings_genre.html).
 
 ```
 clickme(points,
